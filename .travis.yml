@@ -15,10 +15,8 @@ before_success:
 
 install: 
 - gem install jekyll
-- bundle install –no-deployment
-- gem install jekyll-paginate
 
-script: jekyll build
+after_scuuess: jekyll server
 
 env:
  global:
