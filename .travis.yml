@@ -10,13 +10,9 @@ branches:
 before_install:
 - openssl aes-256-cbc -K $encrypted_435f27f33ba6_key -iv $encrypted_435f27f33ba6_iv
   -in id_ras_deploy.enc -out ~/.ssh/id_ras_deploy -d
-before_success:
-- git pull origin dev
-
-install: 
-- gem install jekyll
-
-after_scuuess: jekyll server
+deploy:
+- cd /root/Blog
+- touch test.text
 
 env:
  global:
