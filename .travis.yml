@@ -2,5 +2,16 @@ branches:
   only:
   - dev
 before_install:
-  - openssl aes-256-cbc -K $encrypted_9b2d7e19d83c_key -iv $encrypted_9b2d7e19d83c_iv
-  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+- openssl aes-256-cbc -K $encrypted_9b2d7e19d83c_key -iv $encrypted_9b2d7e19d83c_iv
+  -in id_rsa.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- cp ssh_config ~/.ssh/config
+
+after_success:
+- ssh root@47.102.222.59 "cd ~/ && touch test.text"
+
+addons:
+  ssh_known_hosts: 47.102.222.59
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true

@@ -1,0 +1,6 @@
+Host test
+HostName 47.102.222.59
+StrictHostKeyChecking no
+User root
+IdentitiesOnly yes
+IdentityFile ~/.ssh/id_rsa
