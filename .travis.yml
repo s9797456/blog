@@ -18,7 +18,7 @@ script:
 - bundle exec jekyll build
 
 after_success:
-- ssh root@47.102.222.59 "cd ~/ && touch test.text"
+- ssh root@47.102.222.59 "cd ~/blog && git pull origin dev:dev && jekyll bundler"
 
 addons:
   ssh_known_hosts: 47.102.222.59
