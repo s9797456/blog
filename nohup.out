@@ -1,0 +1,20 @@
+Configuration file: /root/blog/_config.yml
+[33m       Deprecation: The 'gems' configuration option has been renamed to 'plugins'. Please update your config file accordingly.[0m
+            Source: /root/blog
+       Destination: /root/blog/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.301 seconds.
+ Auto-regeneration: enabled for '/root/blog'
+    Server address: http://0.0.0.0:80
+  Server running... press ctrl-c to stop.
+Configuration file: /root/blog/_config.yml
+[33m       Deprecation: The 'gems' configuration option has been renamed to 'plugins'. Please update your config file accordingly.[0m
+            Source: /root/blog
+       Destination: /root/blog/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.314 seconds.
+ Auto-regeneration: enabled for '/root/blog'
+    Server address: http://0.0.0.0:80
+  Server running... press ctrl-c to stop.
