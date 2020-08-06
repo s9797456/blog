@@ -11,6 +11,12 @@ before_install:
 - chmod 600 ~/.ssh/id_rsa
 - cp ssh_config ~/.ssh/config
 
+script:
+- gem update --system
+- gem install jekyll
+- bundle install
+- bundle exec jekyll build
+
 after_success:
 - ssh root@47.102.222.59 "cd ~/ && touch test.text"
 
